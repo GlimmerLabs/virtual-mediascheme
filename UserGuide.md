@@ -93,17 +93,17 @@ We don't have enough experience to predict what can go wrong, so ask
 
 4. Try running a sample program.  For example, you might try the following.
 
-    #lang racket
-    (require gigls/unsafe)
+        #lang racket
+        (require gigls/unsafe)
 
-    (define canvas (image-new 200 200))
-    (image-select-ellipse! canvas REPLACE 10 20 90 120)
-    (context-set-fgcolor! "black")
-    (image-fill! canvas)
-    (context-set-fgcolor! "red")
-    (image-stroke-selection! canvas)
-    (image-select-nothing! canvas)
-    (image-show canvas)
+        (define canvas (image-new 200 200))
+        (image-select-ellipse! canvas REPLACE 10 20 90 120)
+        (context-set-fgcolor! "black")
+        (image-fill! canvas)
+        (context-set-fgcolor! "red")
+        (image-stroke-selection! canvas)
+        (image-select-nothing! canvas)
+        (image-show canvas)
 
 Additional Setup
 ----------------
