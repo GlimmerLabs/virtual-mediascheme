@@ -26,7 +26,7 @@ Virtual Machine
 We hope to put Mediascheme on the Web.  (At that point, the README
 file should be updated with a link.)  For now, you will probably
 get it on a flash drive.  The virtual machine will be named something
-like `Xubuntu151-v1.2.ova`.
+like `Xubuntu151-v1.2.vba.ova`.
 
 *Warning!*  The virtual machine is a little over 2 gigabytes.  It
 will take you awhile to download.  It is also about 5 gigabytes
