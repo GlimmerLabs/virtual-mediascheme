@@ -80,6 +80,21 @@ use.  Drag launchers for Gimp, DrDracket, and Terminal to the task bars.
 * DrRacket is in the Development menu
 * Terminal is in the Accessories menu.
 
+Configure Terminal
+------------------
+
+Terminal runs white on black, which is painful.  We want to reconfigure 
+it to the standard "Black on White".
+
+Start a terminal session.  Then Edit->Preferences->Colors->Load Presets ...
+and select "Black on White".
+
+Configure DrRacket
+------------------
+
+DrRacket should have the language set.  Start DrRacket, then 
+Language->Choose Language.
+
 Install the Mediascript Tools
 -----------------------------
 
@@ -117,15 +132,6 @@ Install Additional Files
 
 The files in the `Desktop` directory of this repository are useful to have
 in a CSC 151 installation.  They are described in the accompanying README.md.  
-
-Configure Terminal
-------------------
-
-Terminal runs white on black, which is painful.  We want to reconfigure 
-it to the standard "Black on White".
-
-Start a terminal session.  Then Edit->Preferences->Colors->Load Presets ...
-and select "Black on White".
 
 Configure Launcher for .rkt Files
 ---------------------------------
