@@ -26,7 +26,7 @@ Virtual Machine
 We hope to put Mediascheme on the Web.  (At that point, the README
 file should be updated with a link.)  For now, you will probably
 get it on a flash drive.  The virtual machine will be named something
-like `Xubuntu151-v1.2.vba.ova`.
+like `Xubuntu151-v1.3.vba.ova`.
 
 *Warning!*  The virtual machine is a little over 2 gigabytes.  It
 will take you awhile to download.  It is also about 5 gigabytes
@@ -36,7 +36,7 @@ Account Information
 -------------------
 
 Your virtual computer comes configured with a single account, named
-"student", with a password of "csc151".  (We've configured the virtual
+"**student**", with a password of "**csc151**".  (We've configured the virtual
 machine not to ask for an account or password, but you may find them useful
 if you need to install other software on the virtual computer.)
 
@@ -69,7 +69,7 @@ your computer.)
 
 3. Go to the "Advanced" screen.  
 
-4. Turn on the "Virtualization" option."
+4. Turn on the "Virtualization" option.
 
 If that doesn't work, you can try asking for help.  None of the CSC 151 
 faculty regularly use Microsoft Windows, so help is likely to be limited.
@@ -87,9 +87,9 @@ We don't have enough experience to predict what can go wrong, so ask
 
 2. Start Gimp and DrRacket, both of which should be in the task bar.
 
-3. You'll probably need to configure DrRacket to use the appropriate language.
+3. You may need to configure DrRacket to use the appropriate language.
    From the 'Language' menu, select 'Choose Language', and then 'The Racket
-   Langauge'
+   Language'
 
 4. Try running a sample program.  For example, you might try the following.
 
@@ -105,10 +105,10 @@ We don't have enough experience to predict what can go wrong, so ask
         (image-select-nothing! canvas)
         (image-show canvas)
 
-Additional Setup
-----------------
+Important! Additional Setup
+----------------------------
 
-The default settings for virtual machines have a fixed screen size.  You can
+The default settings for virtual machines have a small fixed screen size.  You can
 often get the virtual computer to resize the screen size when you resize the
 window by installing some host-specific additions.  (By "host-specific", we
 mean that it's related to the computer that you're running Virtual Box on,
@@ -146,10 +146,14 @@ Devices->Clipboard->Bidirectional.
 Updating Your Installation
 --------------------------
 
+### System Updates
+
 Like Microsoft Windows and Macintosh OS X, Xubuntu/Ubuntu will occasionally
 pop up a message when you log in telling you that things have to be updated.
 Feel free to update.  You should also feel free to ignore the requests to
 update.
+
+### Mediascript Updates
 
 Unlike much commercial software, the Mediascript software does not
 provide an automatic update facility.  So, when we update Mediascript,
