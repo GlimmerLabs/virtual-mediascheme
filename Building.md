@@ -136,12 +136,27 @@ in a CSC 151 installation.  They are described in the accompanying README.md.
 Configure Launcher for .rkt Files
 ---------------------------------
 
-*Warning!*  This solution is not ideal.  Right now, all it does it
-make it easier to select DrRacket as the application.  (Xubuntu
-seems to consider .rkt files as plain text files, so making DrRacket
-the default application for .rkt files means it would also be what
-you get when you double click on .txt files.) We really need to
-update various registries, but that's a task for another day.
+Add the file `/usr/share/mime/packages/racket.xml'
+
+    <?xml version="1.0" encoding="UTF-8"?> 
+    <mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
+        <mime-type type="text/x-racketsrc">
+            <comment>Racket source code</comment>
+            <sub-class-of type="text/plain"/>
+	    <glob pattern="*.rkt"/>
+        </mime-type>
+    </mime-info>
+    
+Run `update-mime-database`
+
+    $ sudo update-mime-database /usr/share/mime
+    
+Check mime types
+
+    $ cd /home/student/Desktop
+    $ mimetype *.rkt
+    
+Do the rest
 
 * Shift-Click on one of the .rkt files on the desktop.  
 * Select "Properties ..."
@@ -150,9 +165,7 @@ update various registries, but that's a task for another day.
 * Click "Close".
 * Double click and ensure that DrRacket opens.
 * Quit DrRacket.
-* Open the properties of the file again.
-* Restore the open-with application to Mousepad.
-
+*
 Optional: Install Guest Additions
 ---------------------------------
 
