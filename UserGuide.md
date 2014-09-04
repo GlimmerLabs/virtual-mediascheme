@@ -145,15 +145,27 @@ We don't have enough experience to predict what can go wrong, so ask
         (image-select-nothing! canvas)
         (image-show canvas)
 
-Updating Your Installation
---------------------------
+Updating Your Virtual Machine
+-----------------------------
 
-### System Updates
+At rare instances, you may need to update your virtual machine, perhaps 
+because there have beeen updates to Xubuntu, updates to the Mediascript
+software, or even updates to Virtual Box.  If you are in CSC 151, we will
+tell you about updates to the Mediascript software.  Xubuntu and Virtual
+Box will tell you about their own updates.
+
+### Operating System Updates
 
 Like Microsoft Windows and Macintosh OS X, Xubuntu/Ubuntu will occasionally
 pop up a message when you log in telling you that things have to be updated.
 Feel free to update.  You should also feel free to ignore the requests to
 update.
+
+### Virtual Box Updates
+
+Each time you start Virtual Box, it checks whether you have the most up-to-date
+version.  If you don't, it will suggest that you upgrade.  Once again, feel
+free to upgrade or to ignore the requests.
 
 ### Mediascript Updates
 
@@ -161,14 +173,16 @@ Unlike much commercial software, the Mediascript software does not
 provide an automatic update facility.  So, when we update Mediascript,
 we'll try to send out a note to our students telling you what to
 do to update it.  The typical update instructions will be something
-like the following.
+like the following.  (Note: Some versions of these instructions have
+backticks around the commands to distinguish them from the surrounding
+text.  Don't type those backticks.)
 
 1. Open a terminal window.
 
-2. Type `cd Mediascheme/gigls`.  (Don't type the backticks.)
+2. Type `cd Mediascheme/gigls`.
 
-3. Type `git pull`.  (Once again, don't type the backticks.)
+3. Type `git pull`.
 
-4. Type `make`.  (You guessed it, don't type the backticks.)
+4. Type `make`.
 
-5. Try to run some commands in Mediascheme.
+5. Try to run some commands in Mediascheme (see above).
