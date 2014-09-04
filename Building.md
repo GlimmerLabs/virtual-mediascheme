@@ -83,13 +83,11 @@ use.  Drag launchers for Gimp, DrDracket, and Terminal to the task bars.
 Install the Mediascript Tools
 -----------------------------
 
-The Mediascript framework needs three packages.  These days, I'm also
-installing the experimental psaifr project.
+The Mediascript framework needs three packages.  
 
 * gimp-dbus
 * louDBus
 * gigls
-* psaifr
 
 Here are approximate instructions for installing them in a terminal window.
 
@@ -99,7 +97,6 @@ Here are approximate instructions for installing them in a terminal window.
     $ git clone https://github.com/GlimmerLabs/gimp-dbus
     $ git clone https://github.com/GlimmerLabs/louDBus
     $ git clone https://github.com/GlimmerLabs/gigls
-    $ git clone https://github.com/GlimmerLabs/psaifr
 
     $ cd /home/student/Mediascript/gimp-dbus
     $ make
@@ -111,11 +108,6 @@ Here are approximate instructions for installing them in a terminal window.
 The next steps require that we've started GIMP and turned on the server.
 
     $ cd /home/student/Mediascript/gigls
-    $ make
-    $ raco link `pwd`
-    $ make compile
-
-    $ cd /home/student/Mediascript/psaifr
     $ make
     $ raco link `pwd`
     $ make compile
