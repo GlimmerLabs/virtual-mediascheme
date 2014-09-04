@@ -53,6 +53,8 @@ Setting Up
 
 4. Start the Virtual Machine.
 
+5. Install the Guest Additions (see below).
+
 Issues with Microsoft Windows Computers
 ---------------------------------------
 
@@ -74,39 +76,8 @@ your computer.)
 If that doesn't work, you can try asking for help.  None of the CSC 151 
 faculty regularly use Microsoft Windows, so help is likely to be limited.
 
-Running the Virtual Machine
----------------------------
-
-Once you're set up, running the virtual machine should be straightforward.
-We don't have enough experience to predict what can go wrong, so ask
-<rebelsky@grinnell.edu> if you have problems.
-
-1. Double click on the machine in VirtualBox.  If all goes well, you should
-   see a desktop much like you get in MathLAN.  (We haven't tried to get all
-   of the configuration identical, but it's much the same.)
-
-2. Start Gimp and DrRacket, both of which should be in the task bar.
-
-3. You may need to configure DrRacket to use the appropriate language.
-   From the 'Language' menu, select 'Choose Language', and then 'The Racket
-   Language'
-
-4. Try running a sample program.  For example, you might try the following.
-
-        #lang racket
-        (require gigls/unsafe)
-
-        (define canvas (image-new 200 200))
-        (image-select-ellipse! canvas REPLACE 10 20 90 120)
-        (context-set-fgcolor! "black")
-        (image-fill! canvas)
-        (context-set-fgcolor! "red")
-        (image-stroke-selection! canvas)
-        (image-select-nothing! canvas)
-        (image-show canvas)
-
-Important! Additional Setup
-----------------------------
+Important! Additional Setup: The Guest Additions
+------------------------------------------------
 
 The default settings for virtual machines have a small fixed screen size.  You can
 often get the virtual computer to resize the screen size when you resize the
@@ -142,6 +113,37 @@ After the machine restarts, see if resizing the window works appropriately.
 
 If the window resizes correctly, try enabling cut-and-paste with 
 Devices->Clipboard->Bidirectional.
+
+Running the Virtual Machine
+---------------------------
+
+Once you're set up, running the virtual machine should be straightforward.
+We don't have enough experience to predict what can go wrong, so ask
+<rebelsky@grinnell.edu> if you have problems.
+
+1. Double click on the machine in VirtualBox.  If all goes well, you should
+   see a desktop much like you get in MathLAN.  (We haven't tried to get all
+   of the configuration identical, but it's much the same.)
+
+2. Start Gimp and DrRacket, both of which should be in the task bar.
+
+3. You may need to configure DrRacket to use the appropriate language.
+   From the 'Language' menu, select 'Choose Language', and then 'The Racket
+   Language'
+
+4. Try running a sample program.  For example, you might try the following.
+
+        #lang racket
+        (require gigls/unsafe)
+
+        (define canvas (image-new 200 200))
+        (image-select-ellipse! canvas REPLACE 10 20 90 120)
+        (context-set-fgcolor! "black")
+        (image-fill! canvas)
+        (context-set-fgcolor! "red")
+        (image-stroke-selection! canvas)
+        (image-select-nothing! canvas)
+        (image-show canvas)
 
 Updating Your Installation
 --------------------------
