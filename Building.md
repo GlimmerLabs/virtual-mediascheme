@@ -165,7 +165,7 @@ Do the rest
 * Click "Close".
 * Double click and ensure that DrRacket opens.
 * Quit DrRacket.
-*
+
 Optional: Install Guest Additions
 ---------------------------------
 
