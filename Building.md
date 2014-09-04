@@ -43,7 +43,8 @@ Since students are used to the task bar on the bottom, we move the task
 bar to the bottom.
 
 * Right click on the panel, panel -> panel preferences -> unclick "Lock Panel"
-* Drag the panel to the bottom.
+* Click on the upper-right and drag the panel to the bottom.
+* Relock the panel.
 
 Install Synaptic
 ----------------
