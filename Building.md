@@ -28,6 +28,14 @@ Install Xubuntu.  For the traditional CSC 151 course, I use the settings
 * Password: csc151
 * Automatic login without password
 
+Upgrade
+-------
+
+The odds are that something will be out of date.  (Xubuntu upgrades
+happen pretty frequently.)  Get it up to date.
+
+    $ sudo apt-get upgrade
+
 Task Bar
 --------
 
