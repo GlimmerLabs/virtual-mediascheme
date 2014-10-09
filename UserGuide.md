@@ -87,7 +87,7 @@ whether it be Mac, Windows, or Linux.) The host-specific additions also add
 some other useful features, such as the ability to copy and paste between
 the virtual machine and the host machine.
 
-Ideally, you should be able to select 'Devices' -> 'Install Host Additions'
+Ideally, you should be able to select 'Devices' -> 'Install Guest Additions'
 and everything will work automatically.  But that's not been our experience.
 If you're lucky, you'll see a virtual CD appear on the desktop and an
 installation program will start to run.  If you are a bit less lucky, you'll
