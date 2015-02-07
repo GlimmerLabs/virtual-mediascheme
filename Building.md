@@ -173,3 +173,8 @@ We generally build a system-agnostic virtual machine.  However, you may
 want to build a system-specific virtual machine by installing the guest
 additions so that students don't have to.  Instructions are in the
 user guide.
+
+Optional: Stop Screen Locking
+-----------------------------
+
+Recently screen locking got added.  We should turn it off.
