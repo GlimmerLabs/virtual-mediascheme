@@ -74,11 +74,12 @@ Create Launchers
 ----------------
 
 It's helpful to have launchers for the main applications that students will
-use.  Drag launchers for Gimp, DrDracket, and Terminal to the task bars.
+use.  Drag launchers for Gimp, DrDracket, Terminal, and Chromium to the task bar.
 
 * Gimp is in the Graphics menu
 * DrRacket is in the Development menu
-* Terminal is in the Accessories menu.
+* Terminal is in the Accessories menu
+* Chromium is in the Internet menu
 
 Configure Terminal
 ------------------
@@ -112,6 +113,7 @@ Here are approximate instructions for installing them in a terminal window.
     $ git clone https://github.com/GlimmerLabs/gimp-dbus
     $ git clone https://github.com/GlimmerLabs/louDBus
     $ git clone https://github.com/GlimmerLabs/gigls
+    $ git clone https://github.com/GlimmerLabs/virtual-mediascheme
 
     $ cd /home/student/Mediascript/gimp-dbus
     $ make
@@ -133,6 +135,8 @@ Install Additional Files
 The files in the `Desktop` directory of this repository are useful to have
 in a CSC 151 installation.  They are described in the accompanying README.md.  
 
+    $ cp /home/student/Mediascript/virtual-mediascheme/Desktop/* /home/student/Desktop
+
 Configure Launcher for .rkt Files
 ---------------------------------
 
@@ -143,7 +147,7 @@ Add the file `/usr/share/mime/packages/racket.xml'
         <mime-type type="text/x-racketsrc">
             <comment>Racket source code</comment>
             <sub-class-of type="text/plain"/>
-	    <glob pattern="*.rkt"/>
+            <glob pattern="*.rkt"/>
         </mime-type>
     </mime-info>
     
@@ -192,6 +196,7 @@ Set Home Page for Chromium
 --------------------------
 
 Clearly, the current section of 151 should be the home page for Chromium.
+You may also want to make Chromium the default Web broswer.
 
 Optional: Install Guest Additions
 ---------------------------------
