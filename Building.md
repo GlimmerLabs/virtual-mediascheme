@@ -84,10 +84,10 @@ Configure Terminal
 ------------------
 
 Terminal runs white on black, which is painful.  We want to reconfigure 
-it to the standard "Black on White".
+it to the standard "Black on White".  
 
 Start a terminal session.  Then Edit->Preferences->Colors->Load Presets ...
-and select "Black on White".
+and select "Black on White".  You may also have to do this manually.
 
 Configure DrRacket
 ------------------
@@ -166,6 +166,33 @@ Do the rest
 * Double click and ensure that DrRacket opens.
 * Quit DrRacket.
 
+Stop Screen Locking
+-------------------
+
+Recently screen locking got added.  We should turn it off.  It appears 
+that the screen saver is *Light Locker*.  Bring up the Settings Manager
+(I used the application pane), select "Light Locker", and turn it off.
+
+Add Account for `rebelsky`
+--------------------------
+
+Many of the instructions say to use /home/rebelsky/Desktop/whatever.
+In the first attempt, I used `adduser` to add me.  That doesn't seem
+to create the desktop, so perhaps I should use a GUI tool.  
+
+    $ sudo adduser rebelsky
+    
+After adding me, we can copy files over
+
+    $ sudo /bin/su rebelsky
+    $ mkdir ~/Desktop
+    $ cp /home/student/Desktop/kitten.jpg ~/Desktop/kitten.jpg
+    
+Set Home Page for Chromium
+--------------------------
+
+Clearly, the current section of 151 should be the home page for Chromium.
+
 Optional: Install Guest Additions
 ---------------------------------
 
@@ -174,7 +201,4 @@ want to build a system-specific virtual machine by installing the guest
 additions so that students don't have to.  Instructions are in the
 user guide.
 
-Optional: Stop Screen Locking
------------------------------
 
-Recently screen locking got added.  We should turn it off.
