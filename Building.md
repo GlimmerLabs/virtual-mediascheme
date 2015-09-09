@@ -28,6 +28,15 @@ Install Xubuntu.  For the traditional CSC 151 course, I use the settings
 * Password: csc151
 * Automatic login without password
 
+Configure Terminal
+------------------
+
+Terminal runs white on black, which is painful.  We want to reconfigure 
+it to the standard "Black on White".  
+
+Start a terminal session.  Then Edit->Preferences->Colors->Load Presets ...
+and select "Black on White".  You may also have to do this manually.
+
 Upgrade
 -------
 
@@ -68,27 +77,17 @@ indirectly.
      $ sudo apt-get install git
      $ sudo apt-get install gedit
      $ sudo apt-get install vim
-     $ sudo apt-get install chromium-browser
      
 Create Launchers
 ----------------
 
 It's helpful to have launchers for the main applications that students will
-use.  Drag launchers for Gimp, DrDracket, Terminal, and Chromium to the task bar.
+use.  Drag launchers for Gimp, DrDracket, Terminal, and Firefox to the task bar.
 
 * Gimp is in the Graphics menu
 * DrRacket is in the Development menu
 * Terminal is in the Accessories menu
-* Chromium is in the Internet menu
-
-Configure Terminal
-------------------
-
-Terminal runs white on black, which is painful.  We want to reconfigure 
-it to the standard "Black on White".  
-
-Start a terminal session.  Then Edit->Preferences->Colors->Load Presets ...
-and select "Black on White".  You may also have to do this manually.
+* Firefox is in the Internet menu
 
 Configure DrRacket
 ------------------
@@ -192,11 +191,11 @@ After adding me, we can copy files over
     $ mkdir ~/Desktop
     $ cp /home/student/Desktop/kitten.jpg ~/Desktop/kitten.jpg
     
-Set Home Page for Chromium
+Set Home Page for Firefox
 --------------------------
 
-Clearly, the current section of 151 should be the home page for Chromium.
-You may also want to make Chromium the default Web broswer.
+Clearly, the current section of 151 should be the home page for Firefox.
+You may also want to make Firefox the default Web broswer.
 
 Optional: Install Guest Additions
 ---------------------------------
