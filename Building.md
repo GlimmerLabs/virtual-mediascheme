@@ -89,6 +89,19 @@ use.  Drag launchers for Gimp, DrDracket, Terminal, and Firefox to the task bar.
 * Terminal is in the Accessories menu
 * Firefox is in the Internet menu
 
+### Fixing the DrRacket Icon
+
+In some situations (e.g., Xubuntu 15.04 and DrRacket 6.something), the DrRacket
+icon doesn't appear.  Here's what I've observed.
+
+* Icons are in `/usr/share/pixmaps`
+* The DrRacket icons link to `/usr/share/racket/collects/icons`
+* But they should link to `/usr/share/racket/pkgs/icons`
+
+Solution: Link the pkgs icons to the collects icons.
+
+    sudo ln -s /usr/share/racket/pkgs/icons 
+
 Configure DrRacket
 ------------------
 
@@ -126,7 +139,6 @@ The next steps require that we've started GIMP and turned on the server.
     $ cd /home/student/Mediascript/gigls
     $ make
     $ raco link `pwd`
-    $ make compile
 
 Install Additional Files
 ------------------------
@@ -206,8 +218,8 @@ You may also want to make Firefox the default Web broswer.
 Optional: Install Guest Additions
 ---------------------------------
 
-We generally build a system-agnostic virtual machine.  However, you may
-want to build a system-specific virtual machine by installing the guest
+We generally build a host-agnostic virtual machine.  However, you may
+want to build a host-specific virtual machine by installing the guest
 additions so that students don't have to.  Instructions are in the
 user guide.
 
