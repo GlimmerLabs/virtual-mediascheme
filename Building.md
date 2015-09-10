@@ -172,9 +172,15 @@ Do the rest
 Stop Screen Locking
 -------------------
 
-Recently screen locking got added.  We should turn it off.  It appears 
-that the screen saver is *Light Locker*.  Bring up the Settings Manager
-(I used the application pane), select "Light Locker", and turn it off.
+Recently screen locking got added.  We should turn it off.  
+
+Bring up the Settings Manager.  Bring up the Power Manager.
+Click on "Security".  Turn off "Lock Screen when System is
+Going to Sleep".
+
+*Old Instructions*: It appears that the screen saver is *Light Locker*.  
+Bring up the Settings Manager (I used the application pane), select 
+"Light Locker", and turn it off.
 
 Add Account for `rebelsky`
 --------------------------
