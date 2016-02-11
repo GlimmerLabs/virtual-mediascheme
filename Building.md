@@ -66,6 +66,29 @@ need to install Synaptic from a terminal window.
 You may be prompted for a password when installing synaptic (or any
 software).  See above for more information.
 
+Install Guest Additions
+-----------------------
+
+*This semester, I'm trying these steps for the original VM.*
+
+1. Open a terminal window in the virtual machine.
+
+2. Type `sudo apt-get install virtualbox-guest-dkms` 
+
+3. Enter the password: `csc151` 
+
+4. Answer yes to the random questions.
+
+5. Restart the virtual machine.
+
+6. After it restarts, try resizing the window.  If the desktop
+resizes to match the window, everything is great. If not, talk to your
+instructor. You can still do the next two steps.
+
+7. Under the _Devices_ menu, select _Shared Clipboard_ and then _Bidirectional_.
+
+8. Under the _Devices_ menu, select _Drag and Drop_ and then _Bidirectional_.
+
 More Things to Install
 ----------------------
 
