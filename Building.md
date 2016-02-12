@@ -253,5 +253,10 @@ Set Home Page for Firefox
 Clearly, the current section of 151 should be the home page for Firefox.
 You may also want to make Firefox the default Web broswer.
 
+Prepare for Distribution
+------------------------
 
+Export as an `.ova` file.
+
+Upload to `/usr/share/drupal6/csc-151-vm/` on the Web server.
 
