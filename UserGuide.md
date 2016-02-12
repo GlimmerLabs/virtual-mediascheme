@@ -1,73 +1,96 @@
 Using Mediascript with Virtual Box
 ==================================
 
+_The latest version of this guide can be found at
+ <https://github.com/GlimmerLabs/virtual-mediascheme/blob/master/UserGuide.md>_
+
 As an experiment, we are providing a virtual machine with Mediascheme,
-the software for Grinnell's CSC 151.   The virtual machine is
-intended primarily for students in that course, although anyone
-with an interest may feel free to use it.
+the software for Grinnell's CSC 151.   The virtual machine is intended
+primarily for students in that course, although anyone with an interest
+may feel free to use it.
 
 We have provided a machine-independent version that should work on
-Mac, Windows, and Linux.  In the near future, we may provide versions
-customized for Mac and Microsoft Windows.
+Mac, Windows, and Linux.  
 
 Feel free to email questions about these instructions or about the 
 virtual machine to Samuel A. "SamR" Rebelsky at <rebelsky@grinnell.edu>.
 
+Short Instructions
+------------------
+
+1. Download and Install the latest version of Virtual Box from
+   <https://www.virtualbox.org>.
+
+2. Download the virtual machine from 
+   <http://www.cs.grinnell.edu/csc-151-vm/Xubuntu151-2016S.ova>.  
+
+3. Double click the `.ova` file to install the virtual machine.
+
+4. Double click the virtual machine to start it.
+
+5. See if it works.
+
+6. Ask for help if it doesn't.
+
+7. Your account is `student` and your password is `csc151`.
+
 Virtual Box
 -----------
 
-The software we use to run virtual computers is called Virtual Box.  You can
-download the version of Virtual Box for your computer from
+The software we use to run virtual computers is called *Virtual Box*.
+You can download the latest version of Virtual Box for your computer from
 <https://www.virtualbox.org>.  (You can also find documentation there.)
+
+*You cannot run the virtual machine without Virtual Box or something
+equivalent.*
 
 Virtual Machine
 ---------------
 
-We hope to put Mediascheme on the Web.  (At that point, the README
-file should be updated with a link.)  For now, you will probably
-get it on a flash drive.  The virtual machine will be named something
-like `Xubuntu151-v1.3.vba.ova`.
+You can find the virtual machine at
+<http://www.cs.grinnell.edu/csc-151-vm/Xubuntu151-2016S.ova>.  
+
+You can find additional instructions for that virtual machine at
+<http://www.cs.grinnell.edu/csc-151-vm/UserGuide.md>.
 
 *Warning!*  The virtual machine is a little over 2 gigabytes.  It
-will take you awhile to download.  It is also about 5 gigabytes
+will take you some time to download.  It is also over 5 gigabytes
 when uncompressed.  Make sure that you have enough disk space.
 
 Account Information
 -------------------
 
 Your virtual computer comes configured with a single account, named
-"**student**", with a password of "**csc151**".  (We've configured the virtual
-machine not to ask for an account or password, but you may find them useful
-if you need to install other software on the virtual computer.)
+"**student**", with a password of "**csc151**".  The machine is configured
+to log you in automatically, but the screen lock may set itself off at
+some ponit.
 
 Setting Up
 ----------
 
-1. Start by installing VirtualBox.  (If you've installed software before, it
-   should be straightfoward.)
+1. Start by installing VirtualBox.  (If you've installed software before, 
+   it should be straightfoward.)
 
 2. Identify the appropriate file from the flash drive, DVD, or Web.  
 
-3. Double click on that file.  If all goes well, in a few minutes you should 
-   see a virtual machine along the left column in VirtualBox.
+3. Double click on that file.  If all goes well, in a few minutes
+   you should see a virtual machine along the left column in VirtualBox.
 
 4. Start the Virtual Machine.
-
-5. Install the Guest Additions (see below).
 
 Issues with Microsoft Windows Computers
 ---------------------------------------
 
 Some computers that run Microsoft Windows have virtualization turned
-off by default.  That means that they will not allow you to run
-virtual machines.  Hence, you need to turn virtualization on.  Here's
-what's worked in the past.
+off by default.  That means that they will not allow you to run virtual
+machines.  Hence, you need to turn virtualization on.  Here's what's
+worked in the past.
 
 1. Shut down the machine and reboot.  
 
-2. Go into the BIOS. (Unfortunately, different computers have different 
-ways of entering the BIOS.  You'll need to figure out the right way for 
-your computer.)
+2. Go into the BIOS. (Unfortunately, different computers have different
+   ways of entering the BIOS.  You'll need to figure out the right way
+   for your computer.)
 
 3. Go to the "Advanced" screen.  
 
@@ -75,44 +98,6 @@ your computer.)
 
 If that doesn't work, you can try asking for help.  None of the CSC 151 
 faculty regularly use Microsoft Windows, so help is likely to be limited.
-
-Important! Additional Setup: The Guest Additions
-------------------------------------------------
-
-The default settings for virtual machines have a small fixed screen size.  You can
-often get the virtual computer to resize the screen size when you resize the
-window by installing some host-specific additions.  (By "host-specific", we
-mean that it's related to the computer that you're running Virtual Box on,
-whether it be Mac, Windows, or Linux.) The host-specific additions also add
-some other useful features, such as the ability to copy and paste between
-the virtual machine and the host machine.
-
-Ideally, you should be able to select 'Devices' -> 'Install Host Additions'
-and everything will work automatically.  But that's not been our experience.
-If you're lucky, you'll see a virtual CD appear on the desktop and an
-installation program will start to run.  If you are a bit less lucky, you'll
-see a virtual CD appear on the desktop, but the installation program won't
-run.  If you're unlucky, the virtual CD won't appear at all.  We can't help
-with that last problem (at least not without sitting down with you), and you
-should just go ahead to the "Running the Virtual Machine" section.   If the
-virtual CD does appear, something like the following should work.
-
-1. Double click on the CD icon.
-
-2. Double click on `autorun.sh`
-
-3. Enter the password (csc151).
-
-4. A terminal window should open.  When it's done, it will say something 
-like "Click Enter to Finish".  Do so.
-
-Once you've installed the additions, you should restart the virtual machine.
-(Click in the lower left-hand corner.  Select "Log Out".  Select "Restart".
-
-After the machine restarts, see if resizing the window works appropriately.
-
-If the window resizes correctly, try enabling cut-and-paste with 
-Devices->Clipboard->Bidirectional.
 
 Running the Virtual Machine
 ---------------------------
@@ -125,7 +110,7 @@ We don't have enough experience to predict what can go wrong, so ask
    see a desktop much like you get in MathLAN.  (We haven't tried to get all
    of the configuration identical, but it's much the same.)
 
-2. Start Gimp and DrRacket, both of which should be in the task bar.
+2. Start GIMP and DrRacket, both of which should be in the task bar.
 
 3. You may need to configure DrRacket to use the appropriate language.
    From the 'Language' menu, select 'Choose Language', and then 'The Racket
@@ -136,14 +121,8 @@ We don't have enough experience to predict what can go wrong, so ask
         #lang racket
         (require gigls/unsafe)
 
-        (define canvas (image-new 200 200))
-        (image-select-ellipse! canvas REPLACE 10 20 90 120)
-        (context-set-fgcolor! "black")
-        (image-fill! canvas)
-        (context-set-fgcolor! "red")
-        (image-stroke-selection! canvas)
-        (image-select-nothing! canvas)
-        (image-show canvas)
+        (define kitten (image-load "/home/student/Desktop/kitten.jpg"))
+        (image-show (image-variant kitten irgb-complement))
 
 Updating Your Virtual Machine
 -----------------------------
@@ -186,3 +165,59 @@ text.  Don't type those backticks.)
 4. Type `make`.
 
 5. Try to run some commands in Mediascheme (see above).
+
+Deprecated: Copying Files
+-------------------------
+
+_These instructions do not currently work.  They may work in the
+next version._
+
+Your virtual machine is independent from both your computer and the
+MathLAN computers.  The guest additions that you added above should
+allow you to copy files from your computer to the virtual machine and
+back again.
+
+If you want to copy files from your virtual machine to MathLAN and back
+again, there are a variety of techniques you can use.  Some students have
+found it easiest to use email.  We recommend that you use terminal commands.
+There's a directory called `/home/student/Desktop/CSC151` on the virtual
+machine.  If you set up a directory called `/home/USERNAME/Desktop/CSC151`
+in your MathLAN account (substituting your own username), there are commands
+on the virtual machine that will "synchronize" the two.  
+
+To upload files in that directory from your virtual machine to MathLAN,
+use the following command in terminal.
+
+    upload-151 USERNAME
+
+You will be prompted for your password.  When you enter your password, you
+should see a report of files being copied.
+
+To download files in that directory from MathLAN to your virtual machine,
+use the following command in terminal.
+
+    download-151 USERNAME
+
+You will also be prompted for your password.  When you enter your password,
+you should see a report of files being copied.
+
+More generally, if you want to copy from any directory on your virtual
+machine to any directory on MathLAN, you can use the following command
+in terminal.
+
+    rsync -rav VM-DIRECTORY/ USERNAME@ssh.cs.grinnell.edu/MATHLAN-DIRECTORY/
+
+For example, the `upload-151` command basically generates the following command.
+
+    rsync -rav /home/student/Desktop/CSC151/ USERNAME@ssh.cs.grinnell.edu/home/USERNAME/Desktop/CSC151/
+
+If you want to copy from MathLAN to your virtual machine, you would swap
+the order in the terminal command.
+
+    rsync -rav USERNAME@ssh.cs.grinnell.edu/MATHLAN-DIRECTORY/ VM-DIRECTORY/
+
+For example, the `download-151` command basically generates the following
+command.
+
+    rsync -rav USERNAME@ssh.cs.grinnell.edu/home/USERNAME/Desktop/CSC151/ /home/student/Desktop/CSC151/
+
