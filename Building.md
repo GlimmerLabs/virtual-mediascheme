@@ -95,11 +95,11 @@ More Things to Install
 These are pieces of software that we rely upon, either directly or 
 indirectly.
 
-     $ sudo apt-get install libgimp2.0-dev 
-     $ sudo apt-get install racket
-     $ sudo apt-get install git
-     $ sudo apt-get install gedit
-     $ sudo apt-get install vim
+     sudo apt-get install libgimp2.0-dev 
+     sudo apt-get install racket
+     sudo apt-get install git
+     sudo apt-get install gedit
+     sudo apt-get install vim
      
 Create Launchers
 ----------------
@@ -142,26 +142,26 @@ The Mediascript framework needs three packages.
 
 Here are approximate instructions for installing them in a terminal window.
 
-    $ cd /home/student
-    $ mkdir Mediascript
-    $ cd Mediascript
-    $ git clone https://github.com/GlimmerLabs/gimp-dbus
-    $ git clone https://github.com/GlimmerLabs/louDBus
-    $ git clone https://github.com/GlimmerLabs/gigls
-    $ git clone https://github.com/GlimmerLabs/virtual-mediascheme
+    cd /home/student
+    mkdir Mediascript
+    cd Mediascript
+    git clone https://github.com/GlimmerLabs/gimp-dbus
+    git clone https://github.com/GlimmerLabs/louDBus
+    git clone https://github.com/GlimmerLabs/gigls
+    git clone https://github.com/GlimmerLabs/virtual-mediascheme
 
-    $ cd /home/student/Mediascript/gimp-dbus
-    $ make
+    cd /home/student/Mediascript/gimp-dbus
+    make
 
-    $ cd /home/student/Mediascript/louDBus
-    $ make
-    $ raco link `pwd`
+    cd /home/student/Mediascript/louDBus
+    make
+    raco link `pwd`
 
 The next steps require that we've started GIMP and turned on the server.
 
-    $ cd /home/student/Mediascript/gigls
-    $ make
-    $ raco link `pwd`
+    cd /home/student/Mediascript/gigls
+    make
+    raco link `pwd`
 
 Install Additional Files
 ------------------------
@@ -169,7 +169,7 @@ Install Additional Files
 The files in the `Desktop` directory of this repository are useful to have
 in a CSC 151 installation.  They are described in the accompanying README.md.  
 
-    $ cp /home/student/Mediascript/virtual-mediascheme/Desktop/* /home/student/Desktop
+    cp /home/student/Mediascript/virtual-mediascheme/Desktop/* /home/student/Desktop
 
 Configure Launcher for .rkt Files
 ---------------------------------
@@ -187,12 +187,12 @@ Add the file `/usr/share/mime/packages/racket.xml'
     
 Run `update-mime-database`
 
-    $ sudo update-mime-database /usr/share/mime
+    sudo update-mime-database /usr/share/mime
     
 Check mime types
 
-    $ cd /home/student/Desktop
-    $ mimetype *.rkt
+    cd /home/student/Desktop
+    mimetype *.rkt
     
 Do the rest
 
@@ -224,13 +224,13 @@ Many of the instructions say to use /home/rebelsky/Desktop/whatever.
 In the first attempt, I used `adduser` to add me.  That doesn't seem
 to create the desktop, so perhaps I should use a GUI tool.  
 
-    $ sudo adduser rebelsky
+    sudo adduser rebelsky
     
 After adding me, we can copy files over
 
-    $ sudo /bin/su rebelsky
-    $ mkdir ~/Desktop
-    $ cp /home/student/Desktop/kitten.jpg ~/Desktop/kitten.jpg
+    sudo /bin/su rebelsky
+    mkdir ~/Desktop
+    cp /home/student/Desktop/kitten.jpg ~/Desktop/kitten.jpg
     
 Set Home Page for Firefox
 --------------------------
