@@ -37,14 +37,6 @@ it to the standard "Black on White".
 Start a terminal session.  Then Edit->Preferences->Colors->Load Presets ...
 and select "Black on White".  You may also have to do this manually.
 
-Upgrade
--------
-
-The odds are that something will be out of date.  (Xubuntu upgrades
-happen pretty frequently.)  Get it up to date.
-
-    $ sudo apt-get upgrade
-
 Fix Windows
 -----------
 
@@ -99,6 +91,14 @@ instructor. You can still do the next two steps.
 
 8. Under the _Devices_ menu, select _Drag and Drop_ and then _Bidirectional_.
 
+Upgrade
+-------
+
+The odds are that something will be out of date.  (Xubuntu upgrades
+happen pretty frequently.)  Get it up to date.
+
+    sudo apt-get upgrade
+
 More Things to Install
 ----------------------
 
@@ -127,9 +127,18 @@ icon doesn't appear.  Here's what I've observed.
 * The DrRacket icons link to `/usr/share/racket/collects/icons`
 * But they should link to `/usr/share/racket/pkgs/icons`
 
-Solution: Link the pkgs icons to the collects icons.
+Solution: Link the pkgs icons to the collects icons. 
 
     sudo ln -s /usr/share/racket/pkgs/icons 
+
+(Of course, I didn't note where that should happen.  Bad Sam.)
+
+Add the Desktop Switcher
+------------------------
+
+Panel -> Add New Items -> Workspace Switcher
+
+Play with the configuration a bit.
 
 Configure DrRacket
 ------------------
@@ -163,7 +172,7 @@ Here are approximate instructions for installing them in a terminal window.
     make
     raco link `pwd`
 
-The next steps require that we've started GIMP and turned on the server.
+**IMPORTANT**: The next steps require that we've started GIMP and turned on the server.
 
     cd /home/student/Mediascript/gigls
     make
@@ -180,7 +189,7 @@ in a CSC 151 installation.  They are described in the accompanying README.md.
 Configure Launcher for .rkt Files
 ---------------------------------
 
-Add the file `/usr/share/mime/packages/racket.xml'
+Add the file `/usr/share/mime/packages/racket.xml`
 
     <?xml version="1.0" encoding="UTF-8"?> 
     <mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
@@ -226,7 +235,7 @@ Bring up the Settings Manager (I used the application pane), select
 Add Account for `rebelsky`
 --------------------------
 
-Many of the instructions say to use /home/rebelsky/Desktop/whatever.
+Many of the instructions say to use `/home/rebelsky/Desktop/whatever`.
 In the first attempt, I used `adduser` to add me.  That doesn't seem
 to create the desktop, so perhaps I should use a GUI tool.  
 
@@ -244,12 +253,5 @@ Set Home Page for Firefox
 Clearly, the current section of 151 should be the home page for Firefox.
 You may also want to make Firefox the default Web broswer.
 
-Optional: Install Guest Additions
----------------------------------
-
-We generally build a host-agnostic virtual machine.  However, you may
-want to build a host-specific virtual machine by installing the guest
-additions so that students don't have to.  Instructions are in the
-user guide.
 
 
