@@ -19,7 +19,7 @@ Initial Setup
 Create a new Linux/Ubuntu machine in Virtual Box.  I tend to configure
 the machine with
 
-* 1 GB Ram
+* 2 GB Ram
 * 8 GB Hard drive, expandable form
 
 Install Xubuntu.  For the traditional CSC 151 course, I use the settings
@@ -44,6 +44,16 @@ The odds are that something will be out of date.  (Xubuntu upgrades
 happen pretty frequently.)  Get it up to date.
 
     $ sudo apt-get upgrade
+
+Fix Windows
+-----------
+
+By default, Xfce likes to expand windows when they hit the top of the screen.
+It's annoying, at best.
+
+* Find _Window Manager Tweaks_.
+* Select _Accessibility_.
+* Turn off "Automatically tile windows"
 
 Task Bar
 --------
