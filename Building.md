@@ -95,11 +95,7 @@ More Things to Install
 These are pieces of software that we rely upon, either directly or 
 indirectly.
 
-     sudo apt-get install libgimp2.0-dev 
-     sudo apt-get install racket
-     sudo apt-get install git
-     sudo apt-get install gedit
-     sudo apt-get install vim
+     sudo apt-get install libgimp2.0-dev racket git gedit vim feh
      
 Create Launchers
 ----------------
